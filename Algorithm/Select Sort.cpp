@@ -20,7 +20,7 @@ int main(){
 	}
 
 	/*
-	11~19줄의 코드는 아래와 같이 변형 가능
+	12~20줄의 코드는 아래와 같이 변형 가능
 	for(int i=0; i<10; ++i)
 		swap(*min_element(arr+i, arr+10), arr[i]);
 	*/
