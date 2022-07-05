@@ -11,17 +11,17 @@ void Merge(int list[], int left, int mid, int right){
 	j = mid+1;
 	k = left; //k는 temp 배열체크할때만 사용
 
-	while(i<=mid && j<=right){
+	while(i<=mid && j<=right){ //분할된 두 배열에서 좌측 배열이 i<=mid일때와 우측 배열이 j<=right일때 list[i], list[j]값을 비교하여 임시 배열 temp에 삽입
 		if(list[i] <= list[j])
 			temp[k++] = list[i++];
 		else
 			temp[k++] = list[j++];
 	}
 
-	while(i<=mid) //13줄 while문에서 비교를 마치고 남아있는 왼쪽 배열의 가장 큰 값을 temp 배열에 삽입
+	while(i<=mid) //13줄 while문에서 비교를 마치고 남아있는 좌측 배열의 가장 큰 값을 temp 배열에 삽입
 		temp[k++] = list[i++];
 
-	while(j<=right) //13줄 while문에서 비교를 마치고 남아있는 오른쪽 배열의 가장 큰 값을 temp 배열에 삽입
+	while(j<=right) //13줄 while문에서 비교를 마치고 남아있는 우측 배열의 가장 큰 값을 temp 배열에 삽입
 		temp[k++] = list[j++];
 
 	for(int x = left; x<=right; ++x) //temp배열에 넣어두었던 값을 다시 list배열에 넣는 과정
@@ -31,7 +31,7 @@ void Merge(int list[], int left, int mid, int right){
 void MergeSort(int list[], int left, int right){
 	int mid;
 
-	//left값이 right값보다 작을때만 Divide 함수를 호출해줌
+	//left값이 right값보다 작을때만 MergeSort 함수를 호출해줌
 	if(left < right){
 		mid = (left+right)/2;
 
