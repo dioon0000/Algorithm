@@ -1,4 +1,4 @@
-//Counting Sort O(N)
+//Counting Sort N은 수의 개수, K는 수의 범위 O(N+K)
 #include <bits/stdc++.h>
 #define MAX 1000
 using namespace std;
