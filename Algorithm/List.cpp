@@ -1,4 +1,4 @@
-//야매 리스트 구현
+//야매 리스트 구현 
 #include <bits/stdc++.h>
 using namespace std;
 
