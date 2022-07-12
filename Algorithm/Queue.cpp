@@ -1,5 +1,5 @@
 /*
-Enqueue 큐에 값을 집어넣는 함수
+Enqueue 큐에 값을 집어넣는 함수 
 Dequeue 큐에서 값을 빼는 함수
 */
 #include <iostream>
