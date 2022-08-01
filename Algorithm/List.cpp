@@ -1,4 +1,4 @@
-//야매 리스트 구현 
+//야매 리스트 구현이므로 코테에만 사용할 것
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -6,6 +6,7 @@ const int MX = 1000005;
 int dat[MX], pre[MX], nxt[MX]; //data, pre_iter, next_iter를 나타내는 배열
 int unused = 1;
 
+//List 삽입기능 함수
 void insert(int addr, int num) {
     //dat 값 생성
     dat[unused] = num;
@@ -22,6 +23,7 @@ void insert(int addr, int num) {
     unused++;
 }
 
+//List 삭제기능 함수
 void erase(int addr) {
     nxt[pre[addr]] = nxt[addr];
 
@@ -29,6 +31,7 @@ void erase(int addr) {
         pre[nxt[addr]] = pre[addr];
 }
 
+//dat의 값을 모두 출력하는 함수
 void traverse() {
     int cur = nxt[0];
     while (cur != -1) {
