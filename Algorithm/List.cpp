@@ -69,4 +69,4 @@ int main(void) {
     fill(nxt, nxt + MX, -1);
     insert_test();
     erase_test();
-}
+} 
