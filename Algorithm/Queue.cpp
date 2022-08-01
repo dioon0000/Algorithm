@@ -56,4 +56,4 @@ int main(){
   DeQueue(); //rear = 2, front = 2
   DeQueue();
   return 0;
-}
+} 
