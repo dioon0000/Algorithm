@@ -73,4 +73,4 @@ int main(){
     delete[] text;
 
     return 0;
-}
+} 
