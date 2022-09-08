@@ -11,7 +11,7 @@ int lower_bound(int arr[], int target, int size){
 			end = mid;
     // 중간값이 원하는 값보다 작을 경우, 시작값을 중간값+1로 설정하여 다시 탐색한다.
 		else 
-      start = mid + 1; 
+      			start = mid + 1; 
 	}
 	return end;
 }
@@ -27,7 +27,7 @@ int upper_bound(int arr[], int target, int size){
 			end = mid;
     // 중간값이 원하는 값보다 작거나 같을 경우, 시작값을 중간값+1로 설정하여 다시 탐색한다.
 		else 
-      start = mid + 1; 
+      			start = mid + 1; 
 	}
 	return end;
 }
