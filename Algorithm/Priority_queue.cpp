@@ -4,7 +4,7 @@ using namespace std;
 int heap[100005];
 int sz = 0; // heap에 들어있는 원소의 수
 //부모노드는 idx/2이고 자식노드 중 왼쪽 노드는 2*idx, 오른쪽 노드는 2*idx+1
-//최대 힙 우선순위 큐 구현
+//최소 힙 우선순위 큐 구현
 
 //O(lgN)
 void push(int x){
