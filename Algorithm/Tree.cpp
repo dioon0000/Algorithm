@@ -51,3 +51,12 @@ void DFS(int cur){
 		DFS(nxt);
 	}
 }
+//---------------------------------------------------------------------------------------------------------------------------
+//단순 순회
+vector<int> adj[10];
+void DFS(int cur, int par){
+	for(int nxt : adj[cur]){
+		if(par == nxt) continue;
+		DFS(nxt, cur);
+	}
+}
